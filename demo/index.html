@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Long Shadow</title>
+	<link rel="stylesheet" href="style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="../jquery.ls.min.js"></script>
+	<script src="js/navmenu.js"></script>
+	<script src="js/SmoothAnchorScroll.js"></script>
+
+	<script>
+		var goinDown, goinUp;
+		
+		$(function(){
+			// ----------- HEADER -----------
+			$('header span').ls({ size: 45, lightSource: 'top right' });
+			$('header').ls({ type: 'box', size: 6, lightSource: 'top center', color: 'this', opacity: 25 });
+			$('section').ls({ type: 'box', size: 6, lightSource: 'top center', opacity: 13 });
+
+			// ----------- ICONS -----------
+			$('#icon1txt').ls({lightSource: 'top right', size: 62});
+			$('#icon2txt').ls({lightSource: 'top right', size: 48});
+			$('#icon3txt').ls({lightSource: 'top right', size: 50});
+			$('#icon4txt').ls({lightSource: 'top center', size: 70});
+
+			$('.icon').each(function(){
+				$(this).ls({type: 'box', lightSource: 'top center', color: 'this', size: 6, opacity: 25});
+			});
+
+			// ... stuff ...
+			$('html, body').css('opacity', '1');
+		});
+	</script>
+
+	<style type="text/css">
+		
+
+	</style>
+</head>
+<body>
+	<header>
+		<span id="headerTitle">LongShadow.js</span>
+
+		<ul id="headerMenu">
+			<li><a href="#lsjs"> ls.js </a></li>
+			<li><a href="#howto"> how-to </a></li>
+			<li><a href="#docs"> Docs </a></li>
+		</ul>
+	</header>
+	
+	<section id="lsjs">
+		Section 1
+		<br /><br /><br /><br /><br /><br /><br />
+		As you might have probably noticed, this is not really finished ... just yet. &nbsp;&nbsp;&nbsp; :)
+		<br /><br /><br /><br /><br /><br /><br />
+	</section>
+
+	<br />
+	
+	<section id="howto">
+		Section 2
+		<br />
+		<div style="text-align: center;">
+			<div class="icon" id="icon1">
+				<span id="icon1txt">1</span>
+			</div>
+
+			<div class="icon" class="icon" id="icon2">
+				<span id="icon2txt">-</span>
+			</div>
+
+			<div class="icon" id="icon3">
+				<span id="icon3txt">.</span>
+			</div>
+
+			<div class="icon" id="icon4">
+				<span id="icon4txt">?</span>
+			</div>
+		</div>
+
+		<span style="float: right; font-size:11pt;">
+			Icon's Symbols provided by <a href="http://icony.co/">Icony</a>.
+		</span>
+	</section>
+
+	<br />
+	
+	<section id="docs">
+		Section 3
+		<br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br />
+	</section>
+
+	<br />
+	
+	<section>
+		Section 4
+		<br /><br /><br /><br /><br /><br /><br />
+	</section>
+
+	<br />
+	
+	<section>
+		Section 4
+		<br /><br /><br /><br /><br /><br /><br />
+	</section>
+
+	<!-- <script src="js/SmoothScroll.js"></script> -->
+
+</body>
+</html>
